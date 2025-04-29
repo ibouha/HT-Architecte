@@ -7,6 +7,8 @@ import { ArrowLeft, Award, Clock, Users, Lightbulb } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import teamMember1 from "@/public/images/team/team1.jpg";
+import studioImage from "@/public/images/studio.png";
+
 
 // Team members data
 const team = [
@@ -123,9 +125,11 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="aspect-video rounded-lg overflow-hidden">
-                <img
-                  src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                <Image
+                  src={studioImage}
                   alt="Studio workspace"
+                  width={1260}
+                  height={750}
                   className="w-full h-full object-cover"
                 />
               </div>

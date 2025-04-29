@@ -7,6 +7,7 @@ import { projects } from "@/data/projects";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 // Define filter categories
 const categories = [
@@ -80,11 +81,12 @@ export default function PortfolioPage() {
                 onMouseLeave={() => setHoveredProject(null)}
               >
                 <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
-                  <img
+                  <Image
                     src={project.imageUrl}
                     alt={project.title}
+                    fill
                     className={cn(
-                      "h-full w-full object-cover transition-transform duration-500",
+                      "object-cover transition-transform duration-500",
                       hoveredProject === project.id ? "scale-110" : "scale-100"
                     )}
                   />
@@ -129,7 +131,7 @@ export default function PortfolioPage() {
             Ready to Start Your Project?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-            We're excited to help bring your vision to life. Contact us to discuss
+            We&apos;re excited to help bring your vision to life. Contact us to discuss
             your architectural needs and how we can create something extraordinary together.
           </p>
           <Button size="lg" className="rounded-full px-8">

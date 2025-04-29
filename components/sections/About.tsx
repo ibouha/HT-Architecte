@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/animations";
 import Image from "next/image";
+import aboutImage from "@/public/images/about.png";
 
 export default function About() {
   return (
@@ -18,10 +19,11 @@ export default function About() {
             className="relative"
           >
             <div className="aspect-square relative rounded-lg overflow-hidden">
-              <img
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              <Image
+                src={aboutImage}
                 alt="Architects working on a project"
-                className="object-cover w-full h-full"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-primary/10 rounded-lg -z-10" />
@@ -40,7 +42,7 @@ export default function About() {
             </h2>
             
             <p className="text-muted-foreground">
-              At HT-Architecte, we believe that architecture is more than just buildings—it's about crafting experiences that enhance the way people live, work, and interact with their environment.
+              At HT-Architecte, we believe that architecture is more than just buildings—it&apos;s about crafting experiences that enhance the way people live, work, and interact with their environment.
             </p>
             
             <div className="space-y-6">

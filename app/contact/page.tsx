@@ -30,9 +30,9 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="text-muted-foreground text-lg">
-              We'd love to hear from you. Whether you're interested in discussing a
+              We&apos;d love to hear from you. Whether you&apos;re interested in discussing a
               potential project, have questions about our services, or just want to
-              connect, we're here to help.
+              connect, we&apos;re here to help.
             </p>
           </motion.div>
         </div>
